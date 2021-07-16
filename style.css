@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.6rem 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e4e4e4;
+}
+.logo {
+  width: 12rem;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transition: all 0.9s ease;
+}
+.logo:hover {
+  /* transform: scale(1.05); */
+  transform: rotate(360deg);
+}
+.logo img {
+  border-radius: 50%;
+  width: 10rem;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.texts {
+  margin-top: 1.8rem;
+  z-index: 11;
+}
+.texts h1 {
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.texts p {
+  font-family: "Ageo Personal Use", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+.card {
+  width: 26rem;
+  /* background: white; */
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin-top: 1.5rem;
+  /* border-radius: 1.2rem; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 0rem;
+}
+.card .links {
+  /* margin-top: 0.5rem; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card .links .link:not(:nth-child(1)) {
+  margin-top: 2.4rem;
+}
+.card .links .link button {
+  /* background-color: #fc1321; */
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: none;
+  outline: none;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  font-family: "Ageo Personal Use", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 16rem;
+  transition: all 0.2s ease;
+  /* border: 2px solid #fc1321; */
+}
+.card .links .link button:hover {
+  width: 18rem;
+  transform: scale(1.05);
+}
+.card .links .link2 button,
+.card .links .link4 button,
+.card .links .link6 button {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+/* .card .links .link2 button:hover,
+.card .links .link4 button:hover,
+.card .links .link6 button:hover {
+  width: 18rem;
+  background-color: #fc1321;
+} */
+.card .links .link button a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 475px) {
+  .logo {
+    width: 10rem;
+    height: 10rem;
+  }
+  .logo img {
+    width: 8rem;
+  }
+  .texts h1 {
+    font-size: 1.9rem;
+  }
+  .texts p {
+    font-size: 1.2rem;
+  }
+  .card {
+    width: 22rem;
+  }
+  .card .links .link button {
+    font-size: 1.1rem;
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .logo {
+    width: 10rem;
+    height: 10rem;
+  }
+  .logo img {
+    width: 8rem;
+  }
+  .texts h1 {
+    font-size: 1.8rem;
+  }
+  .texts p {
+    font-size: 1.1rem;
+  }
+  .card {
+    width: 20rem;
+  }
+  .card .links .link button {
+    font-size: 1rem;
+    width: 13rem;
+  }
+}
