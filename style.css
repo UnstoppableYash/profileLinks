@@ -115,13 +115,13 @@ body {
   width: 18rem;
   transform: scale(1.05);
 }
-.card .links .link2 button,
+/* .card .links .link2 button,
 .card .links .link4 button,
 .card .links .link6 button {
   border-radius: 50px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-}
+} */
 /* .card .links .link2 button:hover,
 .card .links .link4 button:hover,
 .card .links .link6 button:hover {
